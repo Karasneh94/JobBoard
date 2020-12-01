@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Job.create([
+  {title: 'Job title 1', body: 'Job body 1', slug: 'job-title-1'},
+  {title: 'Job title 2', body: 'Job body 2', slug: 'job-title-2'},
+  {title: 'Job title 3', body: 'Job body 3', slug: 'job-title-3'}
+  ])

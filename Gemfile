@@ -27,7 +27,20 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+############################################################
+#Added gems
+gem 'rspec-rails'
+#sample objects for tests
+gem 'factory_bot_rails'
+#json format
+gem 'active_model_serializers'
 
+gem 'simple_form'
+gem 'kaminari'
+
+#github gem
+gem "octokit", "~> 4.0"
+#############################################################
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

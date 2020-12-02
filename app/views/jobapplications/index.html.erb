@@ -1,12 +1,12 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Jobapplications</h1>
 
-<table>
-  <thead>
+<h1>Job Applications</h1>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-dark">
     <tr>
-      <th>Job</th>
-      <th>Job title</th>
+      <th>Job ID</th>
+      <th>Job Title</th>
       <th>User</th>
       <th>Email</th>
       <th>Contact number</th>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Jobapplication', new_jobapplication_path %>
+<%= link_to 'New Job Application', new_jobapplication_path, class:"btn btn-secondary" %>

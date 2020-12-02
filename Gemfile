@@ -38,6 +38,8 @@ gem 'active_model_serializers'
 gem 'simple_form'
 gem 'kaminari'
 
+gem 'devise', '~> 4.2'
+
 #github gem
 gem "octokit", "~> 4.0"
 #############################################################

@@ -1,34 +1,16 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Job:</strong>
-  <%= @jobapplication.job_id %>
-</p>
 
-<p>
-  <strong>Job title:</strong>
-  <%= @jobapplication.job_title %>
-</p>
 
-<p>
-  <strong>User:</strong>
-  <%= @jobapplication.user_id %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @jobapplication.email %>
-</p>
 
-<p>
-  <strong>Contact number:</strong>
-  <%= @jobapplication.contact_number %>
-</p>
+<div class="jumbotron">
+  <h1 class="display-4"><%= @jobapplication.job_title %></h1>
+  <p class="lead">Job ID : <%= @jobapplication.job_id %> | Applied By : <%= @jobapplication.user_id %>.</p>
+  <hr class="my-4">
+  <p>Contact Info ==> Email : <%= @jobapplication.email %> | Contact Number : <%= @jobapplication.contact_number %> | Viewed Application : <%= @jobapplication.seen %></p>
+</div>
 
-<p>
-  <strong>Seen:</strong>
-  <%= @jobapplication.seen %>
-</p>
 
-<%= link_to 'Edit', edit_jobapplication_path(@jobapplication) %> |
-<%= link_to 'Back', jobapplications_path %>
+
+<%= link_to 'Edit', edit_jobapplication_path(@jobapplication), class:"btn btn-secondary" %>
+<%= link_to 'Back', jobapplications_path, class:"btn btn-secondary" %>
